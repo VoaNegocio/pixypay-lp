@@ -25,7 +25,7 @@ function App() {
 
       {/* Floating WhatsApp Button (Fixed on mobile/desktop for easy access) */}
       <div className="fixed bottom-6 right-6 z-40 md:hidden">
-        <WhatsAppButton text="" size="large" className="rounded-full w-14 h-14 !p-0 flex items-center justify-center shadow-green-500/40" showIcon={true} />
+        <WhatsAppButton text="" size="large" ariaLabel="Conversar no WhatsApp" className="rounded-full w-14 h-14 !p-0 flex items-center justify-center shadow-green-500/40" showIcon={true} />
       </div>
     </div>
   );

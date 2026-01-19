@@ -6,7 +6,8 @@ const WhatsAppButton = ({
     text = "QUERO PARCELAR AGORA",
     className = "",
     size = "normal",
-    showIcon = true
+    showIcon = true,
+    ariaLabel = ""
 }) => {
     const baseClasses = "inline-flex items-center justify-center font-bold tracking-wide rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 active:translate-y-0 group";
 
@@ -25,7 +26,7 @@ const WhatsAppButton = ({
             href={WHATSAPP_LINK}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label={text || "Conversar no WhatsApp"}
+            aria-label={ariaLabel || text || "Conversar no WhatsApp"}
             className={`${baseClasses} ${sizeClasses[size]} ${colorClass} ${className} relative overflow-hidden`}
         >
             {/* Simple Shine Effect on Hover */}
