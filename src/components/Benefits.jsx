@@ -7,7 +7,7 @@ const Benefits = () => {
             icon: CreditCard,
             color: "text-blue-300 bg-blue-500/20",
             title: "Pague em 3x via PIX",
-            description: "Facilidade total: Entrada + 15 dias + 30 dias. Sem juros abusivos."
+            description: "Facilidade total: Entrada + 15 dias + 30 dias. Totalmente sem juros."
         },
         {
             icon: Clock,

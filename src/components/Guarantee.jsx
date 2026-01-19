@@ -25,7 +25,7 @@ const Guarantee = () => {
                         </span>
                         <span className="flex items-center justify-center gap-2">
                             <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-                            Sem consulta ao nome
+                            Aprovação do seu pedido em poucos segundos
                         </span>
                         <span className="flex items-center justify-center gap-2">
                             <span className="w-2 h-2 bg-green-500 rounded-full"></span>
