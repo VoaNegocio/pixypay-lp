@@ -8,8 +8,10 @@ const Header = () => {
                 {/* Logo Area */}
                 <div className="flex items-center">
                     <img
-                        src="/logopixypay-small.png"
+                        src="/logopixypay-small.webp"
                         alt="PixyPay Logo"
+                        width="300"
+                        height="59"
                         className="h-10 md:h-12 w-auto object-contain"
                     />
                 </div>
