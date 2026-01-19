@@ -31,7 +31,7 @@ const PainSolution = () => {
 
                         {/* The Solution */}
                         <div className="bg-white rounded-2xl p-6 md:p-8 shadow-xl transform md:scale-105 border-l-4 border-brand-purple">
-                            <div className="inline-flex items-center gap-2 text-green-600 font-bold uppercase tracking-wider text-sm mb-4">
+                            <div className="inline-flex items-center gap-2 text-green-700 font-bold uppercase tracking-wider text-sm mb-4">
                                 <CheckCircle2 size={18} />
                                 <span>Solução PixyPay</span>
                             </div>

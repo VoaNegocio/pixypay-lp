@@ -25,6 +25,7 @@ const WhatsAppButton = ({
             href={WHATSAPP_LINK}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label={text || "Conversar no WhatsApp"}
             className={`${baseClasses} ${sizeClasses[size]} ${colorClass} ${className} relative overflow-hidden`}
         >
             {/* Simple Shine Effect on Hover */}
