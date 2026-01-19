@@ -6,12 +6,20 @@ const CTAFinal = () => {
         <section className="py-24 relative overflow-hidden text-center">
 
             {/* Background Image with Purple Filter */}
+            {/* Background Image with Purple Filter */}
             <div className="absolute inset-0 z-0">
-                <img
-                    src="/heroctafinal.png"
-                    alt="Background"
-                    className="w-full h-full object-cover object-center translate-y-[20%] scale-125 blur-sm"
-                />
+                <picture>
+                    <source media="(max-width: 768px)" srcSet="/hero-cta-mobile.webp" />
+                    <source media="(min-width: 769px)" srcSet="/hero-cta-desktop.webp" />
+                    <img
+                        src="/hero-cta-desktop.webp"
+                        alt="Background PixyPay"
+                        width="1920"
+                        height="1080"
+                        className="w-full h-full object-cover object-center translate-y-[20%] scale-125 blur-sm"
+                        loading="lazy"
+                    />
+                </picture>
                 {/* Purple Gradient Overlay */}
                 <div className="absolute inset-0 bg-brand-navy/90 mix-blend-multiply"></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-navy via-brand-navy/80 to-brand-purple/40"></div>
