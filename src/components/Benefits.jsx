@@ -39,12 +39,20 @@ const Benefits = () => {
         <section className="py-20 relative overflow-hidden">
 
             {/* Background Image with Purple Filter */}
+            {/* Background Image with Purple Filter */}
             <div className="absolute inset-0 z-0">
-                <img
-                    src="/botijaoherodesktop.png"
-                    alt="Background"
-                    className="w-full h-full object-cover object-center translate-y-[20%] scale-110 blur-sm"
-                />
+                <picture>
+                    <source media="(max-width: 768px)" srcSet="/botijao-hero-mobile.webp" />
+                    <source media="(min-width: 769px)" srcSet="/botijao-hero-desktop.webp" />
+                    <img
+                        src="/botijao-hero-desktop.webp"
+                        alt="Background PixyPay"
+                        width="1920"
+                        height="1080"
+                        className="w-full h-full object-cover object-center translate-y-[20%] scale-110 blur-sm"
+                        loading="lazy"
+                    />
+                </picture>
                 {/* Purple Gradient Overlay */}
                 <div className="absolute inset-0 bg-brand-navy/90 mix-blend-multiply"></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-navy via-brand-navy/80 to-brand-purple/40"></div>
