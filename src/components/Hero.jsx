@@ -46,17 +46,14 @@ const Hero = () => {
                             <span className="text-brand-cyan text-xs md:text-sm font-bold tracking-wider uppercase">Inovação em Uberlândia</span>
                         </motion.div>
 
-                        <motion.h1
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: 0.1 }}
+                        <h1
                             className="text-4xl md:text-6xl lg:text-7xl font-heading font-extrabold leading-tight text-white mb-6 tracking-tight"
                         >
                             Gás de Cozinha <br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-cyan to-brand-purple">
                                 Parcelado no PIX
                             </span>
-                        </motion.h1>
+                        </h1>
 
                         <motion.p
                             initial={{ opacity: 0, y: 20 }}
