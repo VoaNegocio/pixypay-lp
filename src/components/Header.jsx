@@ -1,7 +1,7 @@
 import React from 'react';
 import { Flame } from 'lucide-react'; // Using Flame as a placeholder logo part
 
-const Header = () => {
+const Header = ({ city = "Uberlândia", state = "MG" }) => {
     return (
         <header className="w-full py-4 bg-white/90 backdrop-blur-sm fixed top-0 z-50 shadow-sm">
             <div className="container mx-auto px-4 flex justify-center md:justify-between items-center">
@@ -18,7 +18,7 @@ const Header = () => {
 
                 {/* Optional: Simple Contact/Action for Desktop */}
                 <div className="hidden md:block text-sm font-semibold text-gray-600">
-                    Entregas em Uberlândia - MG
+                    Entregas em {city} - {state}
                 </div>
             </div>
         </header>

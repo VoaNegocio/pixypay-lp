@@ -10,17 +10,17 @@ import WhatsAppButton from '../components/WhatsAppButton';
 
 const ARARAS_WHATSAPP_LINK = "https://api.whatsapp.com/send/?phone=5519996217723&text=Ol%C3%A1%21+Gostaria+de+pedir+meu+botij%C3%A3o+de+g%C3%A1s+parcelado+no+PIX.&type=phone_number&app_absent=0";
 
-function Araras() {
+const Araras = () => {
     return (
         <div className="min-h-screen font-sans bg-white selection:bg-brand-cyan selection:text-brand-navy">
-            <Header />
+            <Header city="Araras" state="SP" />
 
             <main>
-                <Hero videoSrc="/videos/videohero-arararas.mp4" whatsappLink={ARARAS_WHATSAPP_LINK} />
+                <Hero videoSrc="/videos/videohero-arararas.mp4" whatsappLink={ARARAS_WHATSAPP_LINK} city="Araras" />
                 <PainSolution whatsappLink={ARARAS_WHATSAPP_LINK} />
-                <Benefits />
+                <Benefits city="Araras" />
                 <Guarantee />
-                <CTAFinal whatsappLink={ARARAS_WHATSAPP_LINK} />
+                <CTAFinal whatsappLink={ARARAS_WHATSAPP_LINK} city="Araras" />
             </main>
 
             <Footer />

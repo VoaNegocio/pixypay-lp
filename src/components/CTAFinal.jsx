@@ -1,7 +1,7 @@
 import React from 'react';
 import WhatsAppButton from './WhatsAppButton';
 
-const CTAFinal = ({ whatsappLink }) => {
+const CTAFinal = ({ whatsappLink, city = "Uberlândia" }) => {
     return (
         <section className="py-24 relative overflow-hidden text-center">
 
@@ -44,7 +44,7 @@ const CTAFinal = ({ whatsappLink }) => {
                 </div>
 
                 <p className="mt-8 text-gray-400 text-sm">
-                    Atendemos Uberlândia e região • Entrega Rápida
+                    Atendemos {city} e região • Entrega Rápida
                 </p>
             </div>
         </section>

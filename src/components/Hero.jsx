@@ -64,7 +64,7 @@ const VideoThumbnail = ({ onClick, videoSrc, className = "" }) => (
     </motion.div>
 );
 
-const Hero = ({ videoSrc = "/videos/videohero1.mp4", whatsappLink }) => {
+const Hero = ({ videoSrc = "/videos/videohero1.mp4", whatsappLink, city = "Uberlândia" }) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     return (
@@ -106,7 +106,7 @@ const Hero = ({ videoSrc = "/videos/videohero1.mp4", whatsappLink }) => {
                                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-cyan opacity-75"></span>
                                     <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-cyan"></span>
                                 </span>
-                                <span className="text-brand-cyan text-xs md:text-sm font-bold tracking-wider uppercase">Inovação em Uberlândia</span>
+                                <span className="text-brand-cyan text-xs md:text-sm font-bold tracking-wider uppercase">Inovação em {city}</span>
                             </motion.div>
 
                             <h1

@@ -1,7 +1,7 @@
 import React from 'react';
 import { CreditCard, Clock, Home, ShieldCheck, HeartHandshake } from 'lucide-react';
 
-const Benefits = () => {
+const Benefits = ({ city = "Uberlândia" }) => {
     const benefits = [
         {
             icon: CreditCard,
@@ -19,7 +19,7 @@ const Benefits = () => {
             icon: Home,
             color: "text-purple-300 bg-purple-500/20",
             title: "Entrega garantida na sua casa",
-            description: "Levamos até você em Uberlândia com toda segurança e rapidez."
+            description: `Levamos até você em ${city} com toda segurança e rapidez.`
         },
         {
             icon: ShieldCheck,
