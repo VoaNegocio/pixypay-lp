@@ -54,7 +54,7 @@ const VideoThumbnail = ({ onClick, className = "" }) => (
             </div>
         </div>
         <video
-            src="/videos/pixypay-video.mp4"
+            src="/videos/videohero1.mp4"
             className="w-full h-full object-cover"
             autoPlay
             loop
@@ -196,7 +196,7 @@ const Hero = () => {
             <VideoModal
                 isOpen={isModalOpen}
                 onClose={() => setIsModalOpen(false)}
-                videoSrc="/videos/pixypay-video.mp4"
+                videoSrc="/videos/videohero1.mp4"
             />
         </>
     );
