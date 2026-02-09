@@ -40,7 +40,7 @@ const VideoModal = ({ isOpen, onClose, videoSrc }) => {
     );
 };
 
-const VideoThumbnail = ({ onClick, className = "" }) => (
+const VideoThumbnail = ({ onClick, videoSrc, className = "" }) => (
     <motion.div
         whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 0.98 }}
@@ -54,7 +54,7 @@ const VideoThumbnail = ({ onClick, className = "" }) => (
             </div>
         </div>
         <video
-            src="/videos/videohero1.mp4"
+            src={videoSrc}
             className="w-full h-full object-cover"
             autoPlay
             loop
@@ -64,7 +64,7 @@ const VideoThumbnail = ({ onClick, className = "" }) => (
     </motion.div>
 );
 
-const Hero = () => {
+const Hero = ({ videoSrc = "/videos/videohero1.mp4", whatsappLink }) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     return (
@@ -120,7 +120,7 @@ const Hero = () => {
 
                             {/* MOBILE ONLY: Video between H1 and P */}
                             <div className="md:hidden mb-8 w-full max-w-[180px] mx-auto">
-                                <VideoThumbnail onClick={() => setIsModalOpen(true)} className="aspect-[9/16] w-full" />
+                                <VideoThumbnail onClick={() => setIsModalOpen(true)} videoSrc={videoSrc} className="aspect-[9/16] w-full" />
                             </div>
 
                             <motion.p
@@ -143,6 +143,7 @@ const Hero = () => {
                                     size="large"
                                     text="Peça agora pelo WhatsApp"
                                     className="w-full sm:w-auto shadow-[0_0_30px_rgba(37,211,102,0.4)]"
+                                    link={whatsappLink}
                                 />
                                 <div className="flex items-center gap-2 text-sm text-gray-400">
                                     <Zap className="w-4 h-4 text-brand-cyan" />
@@ -180,6 +181,7 @@ const Hero = () => {
                             >
                                 <VideoThumbnail
                                     onClick={() => setIsModalOpen(true)}
+                                    videoSrc={videoSrc}
                                     className="aspect-[9/16] w-full max-w-[340px] shadow-[0_20px_50px_rgba(124,58,237,0.3)] transform -rotate-1 hover:rotate-0 transition-transform duration-500"
                                 />
                                 {/* Decorative elements behind video */}
@@ -196,7 +198,7 @@ const Hero = () => {
             <VideoModal
                 isOpen={isModalOpen}
                 onClose={() => setIsModalOpen(false)}
-                videoSrc="/videos/videohero1.mp4"
+                videoSrc={videoSrc}
             />
         </>
     );

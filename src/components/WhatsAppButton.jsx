@@ -7,7 +7,8 @@ const WhatsAppButton = ({
     className = "",
     size = "normal",
     showIcon = true,
-    ariaLabel = ""
+    ariaLabel = "",
+    link
 }) => {
     const baseClasses = "inline-flex items-center justify-center font-bold tracking-wide rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 active:translate-y-0 group";
 
@@ -23,7 +24,7 @@ const WhatsAppButton = ({
 
     return (
         <a
-            href={WHATSAPP_LINK}
+            href={link || WHATSAPP_LINK}
             target="_blank"
             rel="noopener noreferrer"
             aria-label={ariaLabel || text || "Conversar no WhatsApp"}

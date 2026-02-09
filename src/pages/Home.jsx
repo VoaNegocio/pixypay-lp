@@ -14,7 +14,7 @@ function Home() {
             <Header />
 
             <main>
-                <Hero />
+                <Hero videoSrc="/videos/videohero1.mp4" />
                 <PainSolution />
                 <Benefits />
                 <Guarantee />

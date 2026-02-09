@@ -1,7 +1,7 @@
 import React from 'react';
 import WhatsAppButton from './WhatsAppButton';
 
-const CTAFinal = () => {
+const CTAFinal = ({ whatsappLink }) => {
     return (
         <section className="py-24 relative overflow-hidden text-center">
 
@@ -39,6 +39,7 @@ const CTAFinal = () => {
                         text="FAZER PEDIDO AGORA"
                         size="large"
                         className="shadow-2xl scale-110 hover:scale-125 transition-transform"
+                        link={whatsappLink}
                     />
                 </div>
 

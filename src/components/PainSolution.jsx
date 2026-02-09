@@ -2,7 +2,7 @@ import React from 'react';
 import WhatsAppButton from './WhatsAppButton';
 import { BadgeAlert, CheckCircle2 } from 'lucide-react';
 
-const PainSolution = () => {
+const PainSolution = ({ whatsappLink }) => {
     return (
         <section className="py-16 md:py-24 bg-gray-900 relative overflow-hidden">
             {/* Background with blur effect to simulate "fogão vazio" atmosphere */}
@@ -41,7 +41,7 @@ const PainSolution = () => {
                                     A gente te ajuda a garantir o gás agora — e você paga com calma.
                                 </span>
                             </p>
-                            <WhatsAppButton text="QUERO AJUDA AGORA" className="w-full" size="normal" />
+                            <WhatsAppButton text="QUERO AJUDA AGORA" className="w-full" size="normal" link={whatsappLink} />
                         </div>
 
                     </div>
