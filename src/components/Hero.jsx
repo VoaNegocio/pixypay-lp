@@ -64,7 +64,7 @@ const VideoThumbnail = ({ onClick, videoSrc, className = "" }) => (
     </motion.div>
 );
 
-const Hero = ({ videoSrc = "/videos/videohero1.mp4", whatsappLink, city = "Uberlândia" }) => {
+const Hero = ({ videoSrc = "/videos/videohero1.mp4", whatsappLink, city = "Uberlândia", noTilt = false }) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     return (
@@ -182,7 +182,7 @@ const Hero = ({ videoSrc = "/videos/videohero1.mp4", whatsappLink, city = "Uberl
                                 <VideoThumbnail
                                     onClick={() => setIsModalOpen(true)}
                                     videoSrc={videoSrc}
-                                    className="aspect-[9/16] w-full max-w-[340px] shadow-[0_20px_50px_rgba(124,58,237,0.3)] transform -rotate-1 hover:rotate-0 transition-transform duration-500"
+                                    className={`aspect-[9/16] w-full max-w-[340px] shadow-[0_20px_50px_rgba(124,58,237,0.3)] ${noTilt ? '' : 'transform -rotate-1 hover:rotate-0'} transition-transform duration-500`}
                                 />
                                 {/* Decorative elements behind video */}
                                 <div className="absolute -z-10 top-10 -right-10 w-40 h-40 bg-brand-cyan/20 rounded-full blur-3xl"></div>
